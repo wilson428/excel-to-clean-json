@@ -1,6 +1,6 @@
 {
-  "name": "xlsToJSON",
-  "version": "0.0.1",
+  "name": "excel-to-clean-json",
+  "version": "0.0.2",
   "description": "Simple script to organize the object you get back from `xlsjs`",
   "main": "index.js",
   "directories": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilson428/xlsToJSON.git"
+    "url": "git+https://github.com/wilson428/excel-to-clean-json.git"
   },
   "keywords": [
     "XLS",
@@ -25,7 +25,7 @@
   "author": "Chris Wilson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wilson428/xlsToJSON/issues"
+    "url": "https://github.com/wilson428/excel-to-clean-json/issues"
   },
-  "homepage": "https://github.com/wilson428/xlsToJSON#readme"
+  "homepage": "https://github.com/wilson428/excel-to-clean-json#readme"
 }
