@@ -1,0 +1,31 @@
+{
+  "name": "xls-to-json",
+  "version": "0.0.1",
+  "description": "Simple script to organize the object you get back from `xlsjs`",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "xlsjs": "^0.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilson428/xls-to-json.git"
+  },
+  "keywords": [
+    "XLS",
+    "Excel",
+    "json"
+  ],
+  "author": "Chris Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilson428/xls-to-json/issues"
+  },
+  "homepage": "https://github.com/wilson428/xls-to-json#readme"
+}
