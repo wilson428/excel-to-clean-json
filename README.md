@@ -1,9 +1,9 @@
 # excel-to-clean-json
 Simple script to organize the object you get back from `xlsjs`. There are a lot of these, and I make no clean to have the best.
 
-v0.0.1
+v0.0.3
 
-[![Build Status](https://travis-ci.org/wilson428/xlsToJSON.png)](https://travis-ci.org/wilson428/downcache)
+[![Build Status](https://travis-ci.org/wilson428/excel-to-clean-json.png)](https://travis-ci.org/wilson428/downcache)
 
 # Example
 
