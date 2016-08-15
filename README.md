@@ -1,5 +1,5 @@
 # excel-to-clean-json
-Simple script to organize the object you get back from `xlsjs`. There are a lot of these, and I make no clean to have the best.
+Simple script to organize the object you get back from `xlsjs`. There are a lot of these, and I make no claim to have the best.
 
 v0.0.3
 
@@ -65,3 +65,6 @@ v0.0.3
 
 
 `xlsToJSON(filename)` will convert every worksheet using `.json`.
+
+## Updates
+v0.0.3: Fixed a major bug where wasn't reading columns after 'Z'

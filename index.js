@@ -15,6 +15,19 @@ module.exports = function(filename, format) {
 	return output;
 }
 
+// input: AB
+// output: 27
+function abecidianToColumnNumber(code) {
+	var column = 0;
+	for (var c = 0; c < code.length; c += 1) {
+		var letter = code[code.length - 1 - c];
+		var value = letter.charCodeAt(0) - 64;
+		column += value * Math.pow(26, c);
+	}
+	return column;
+}
+
+
 // convert the XLS worksheet, in which each cell is a top-level key, to rows
 // for when there isn't a header
 var worksheetToRows = module.exports.rows = function(filename, worksheet_name) {
@@ -24,9 +37,17 @@ var worksheetToRows = module.exports.rows = function(filename, worksheet_name) {
 
 	// group by row
 	for (var key in worksheet) {
-		var letter = key[0],
-			col = letter.charCodeAt(0) - 64,
-			row = parseInt(key.slice(1), 10);
+		var match = /([A-Z]+)(\d+)/.exec(key);
+
+		if (!match) {
+			//console.log("No match", key);
+			continue;
+		}
+
+		var letters = match[1],
+			numbers = match[2],
+			col = abecidianToColumnNumber(letters),
+			row = parseInt(numbers, 10);
 
 		if (typeof worksheet[key].v === "string") {
 			worksheet[key].v = worksheet[key].v.trim();

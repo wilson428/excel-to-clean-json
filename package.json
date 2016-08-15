@@ -1,6 +1,6 @@
 {
   "name": "excel-to-clean-json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple script to organize the object you get back from `xlsjs`",
   "main": "index.js",
   "directories": {
